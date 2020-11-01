@@ -1,5 +1,5 @@
 <template>
-  <a :href="url">
+  <a target="_blank" :href="url">
     <div class="signal--background">
       <img class="icon" src="/img/icons/signal-inverse.svg" />
       <span>Signal</span>
