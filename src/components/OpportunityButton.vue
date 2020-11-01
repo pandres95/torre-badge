@@ -10,7 +10,7 @@ const titleMap = {
   advising: 'Advising others',
   mentoring: 'Mentoring others',
   internships: 'Internships',
-  freelance: 'Freelance gigs',
+  gigs: 'Freelance gigs',
   hiring: 'Hiring talent'
 }
 
