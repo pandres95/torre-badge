@@ -9,7 +9,6 @@ module.exports = {
   html: {
     title: pkg.productName,
     description: pkg.description,
-    environment: process.env.NODE_ENV ?? 'development',
     template: path.join(__dirname, 'index.ejs')
   },
   postcss: {
