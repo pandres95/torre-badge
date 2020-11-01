@@ -10,7 +10,8 @@ const titleMap = {
   advising: 'Advising others',
   mentoring: 'Mentoring others',
   internships: 'Internships',
-  freelance: 'Freelance gigs'
+  freelance: 'Freelance gigs',
+  hiring: 'Hiring talent'
 }
 
 export default {
