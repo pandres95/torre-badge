@@ -1,15 +1,15 @@
 <template>
   <div class="card">
     <div class="heading">
-      <profile-image :src="info.pictureThumbnail" :alt="info.name" />
+      <profile-image :src="info.person.pictureThumbnail" :alt="info.person.name" />
     </div>
     <div class="content">
-      <span class="name">{{ info.name }}</span>
-      <span class="headline">{{ info.professionalHeadline }}</span>
+      <span class="name">{{ info.person.name }}</span>
+      <span class="headline">{{ info.person.professionalHeadline }}</span>
       <div class="opportunities">
         <opportunity-button v-for="opportunity of opportunities" :key="opportunity" :id="opportunity" />
       </div>
-      <signal-me :username="info.username" />
+      <signal-me :username="info.person.publicId" />
     </div>
   </div>
 </template>

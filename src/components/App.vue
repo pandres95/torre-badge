@@ -14,34 +14,7 @@ export default {
   },
   data() {
     return {
-      user: {
-        name: 'Pablo Andrés Dorado Suárez',
-        pictureThumbnail: 'https://starrgate.s3.amazonaws.com:443/CACHE/images/users/9452d46ba9f94fe9851ab4d0bbcb33c81b390f7a/profile_oeuoVH2/2387b40c6bdbd107da26d37a285018f6.jpg',
-        professionalHeadline: 'Development Researcher',
-        opportunities: [
-          {
-            interest: 'jobs',
-            field: 'active',
-            data: true
-          },
-          {
-            interest: 'mentoring',
-            field: 'active',
-            data: true
-          },
-          {
-            interest: 'freelance',
-            field: 'active',
-            data: true
-          },
-          {
-            interest: 'internship',
-            field: 'active',
-            data: true
-          }
-        ],
-        username: 'pablodorado'
-      }
+      user: {}
     };
   },
   async beforeMount() {
@@ -51,7 +24,7 @@ export default {
     async fetchData() {
       const search = new URLSearchParams(window.location.search);
       const response = await fetch(`/api/${search.get('username')}`);
-      this.user = response.json();
+      this.user = await response.json();
     }
   }
 }
