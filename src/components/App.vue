@@ -46,7 +46,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100vh;
   background: transparent;
   font-family: Muli, serif;
 }
